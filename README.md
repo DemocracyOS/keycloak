@@ -14,7 +14,7 @@ $ sudo docker-compose up -d
 ```
 
 #### Access Keycloak
-Browse to http://localhost:8080
+Browse to http://localhost:8080 and go to Administration Console
 ![Keycloak landing](https://raw.githubusercontent.com/DemocracyOS/keycloak/master/img/kc_1.png)
 
 Login with user: keycloak and password: keycloak

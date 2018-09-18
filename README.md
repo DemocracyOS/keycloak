@@ -15,13 +15,13 @@ $ sudo docker-compose up -d
 
 #### Access Keycloak
 Browse to http://localhost:8080
-![Keycloak landing](https://github.com/DemocracyOS/keycloak/img/kc_1.png)
+![Keycloak landing](https://raw.githubusercontent.com/DemocracyOS/keycloak/master/img/kc_1.png)
 
 Login with user: keycloak and password: keycloak
-![Keycloak login](https://github.com/DemocracyOS/keycloak/img/kc_2.png)
+![Keycloak login](https://raw.githubusercontent.com/DemocracyOS/keycloak/master/img/kc_2.png)
 
 IMPORTANT STEP: configure DemocracyOS theme for the default realm!
-![Keycloak theme configuration](https://github.com/DemocracyOS/keycloak/img/kc_3.png)
+![Keycloak theme configuration](https://raw.githubusercontent.com/DemocracyOS/keycloak/master/img/kc_3.png)
 
 #### Customize DemocracyOS theme
 Themes are built with [Apache FreeMarker](https://freemarker.apache.org/).

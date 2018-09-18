@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:9.5.1
+    container_name: postgres
+    env_file:
+      - keycloak.env
+    networks:
+      - keycloak
+
+  keycloak:
+    image: jboss/keycloak:4.0.0.Final
+    container_name: keycloak
+    env_file:
+      - keycloak.env
+    networks:
+      - keycloak
+    volumes:
+      - ./democracyos:/opt/jboss/keycloak/themes/democracyos:rw
+      - ./customization/standalone.xml:/opt/jboss/keycloak/standalone/configuration/standalone.xml:ro
+      - ./customization/standalone-ha.xml:/opt/jboss/keycloak/standalone/configuration/standalone-ha.xml:ro
+    ports:
+      - "8080:8080"
+
+networks:
+  keycloak:
+    driver: bridge

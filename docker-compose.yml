@@ -10,7 +10,7 @@ services:
       - keycloak
 
   keycloak:
-    image: jboss/keycloak:4.0.0.Final
+    image: jboss/keycloak:4.4.0.Final
     container_name: keycloak
     env_file:
       - keycloak.env

@@ -19,6 +19,7 @@ services:
       - keycloak
     volumes:
       - ./democracyos:/opt/jboss/keycloak/themes/democracyos:rw
+      - ./base_templates:/opt/jboss/keycloak/themes/base:rw
     ports:
       - "8080:8080"
 

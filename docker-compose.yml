@@ -10,7 +10,8 @@ services:
       - keycloak
 
   keycloak:
-    image: jboss/keycloak:4.4.0.Final
+    image: democracyos/keycloak:4.4.0.Final
+    build: .
     container_name: keycloak
     env_file:
       - keycloak.env
@@ -18,8 +19,6 @@ services:
       - keycloak
     volumes:
       - ./democracyos:/opt/jboss/keycloak/themes/democracyos:rw
-      - ./customization/standalone.xml:/opt/jboss/keycloak/standalone/configuration/standalone.xml:rw
-      - ./customization/standalone-ha.xml:/opt/jboss/keycloak/standalone/configuration/standalone-ha.xml:rw
     ports:
       - "8080:8080"
 

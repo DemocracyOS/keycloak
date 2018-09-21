@@ -1,7 +1,27 @@
 .login-pf body {
-    background: url("../img/keycloak-bg.png") no-repeat center center fixed;
-    background-size: cover;
+    background: #fff;
 }
+
+h1#kc-page-title{
+    font-size: 22px;
+    font-weight: 500;
+    color: #2c4c61;
+}
+
+input#kc-login.btn.btn-primary.btn-block.btn-lg{
+    background-color: #5c97bc;
+    border-color: #5c97bc;
+    color: #fff;
+    background-image: none;
+    height:40px;
+}
+
+#kc-content {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .alert-error {
     background-color: #ffffff;
@@ -69,7 +89,7 @@ a#kc-current-locale-link::after {
 }
 
 .login-pf a:hover {
-    color: #0099d3;
+    color: #5c97bc;
 }
 
 #kc-logo {
@@ -362,7 +382,7 @@ a.zocial  {
 }
 
 #kc-form-buttons {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .login-pf-page .login-pf-brand {

@@ -1,13 +1,13 @@
 version: '3'
 
 services:
-  mysql:
-    image: mysql:5.7
-    container_name: mysql
-    env_file:
-      - keycloak.env
-    networks:
-      - keycloak
+#  mysql:
+#    image: mysql:5.7
+#    container_name: mysql
+#    env_file:
+#      - keycloak.env
+#    networks:
+#      - keycloak
 
   keycloak:
     image: democracyos/keycloak:4.4.0.Final
@@ -22,6 +22,7 @@ services:
       - ./base_templates:/opt/jboss/keycloak/themes/base:rw
     ports:
       - "8080:8080"
+      - "8082:8082"
 
 networks:
   keycloak:

@@ -34,7 +34,8 @@ $ echo 'java -cp $(find /opt/jboss -type f -name h2*.jar) org.h2.tools.Server -w
 
 **Browse application**
 The application will be available at http://127.0.0.1:8082. It will look like this:
-![H2 Web Application](https://raw.githubusercontent.com/DemocracyOS/keycloak/master/img/h2-app-1.png)
+
+![H2 Web Application](https://raw.githubusercontent.com/DemocracyOS/keycloak/dev-h2database/img/h2-app-1.png)
 Input these values to gain access:
 ```bash
 JDBC URL: jdbc:h2:/opt/jboss/keycloak/standalone/data/keycloak;AUTO_SERVER=TRUE
@@ -42,7 +43,7 @@ User Name: sa
 Password: sa
 ```
 
-![H2 Web Application](https://raw.githubusercontent.com/DemocracyOS/keycloak/master/img/h2-app-2.png)
+![H2 Web Application](https://raw.githubusercontent.com/DemocracyOS/keycloak/dev-h2database/img/h2-app-2.png)
 
 **Kill application**
 After quitting previous `docker exec` command (Ctrl+C) the started java process through bash is not killed, so to kill it with fire:

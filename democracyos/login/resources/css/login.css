@@ -1,6 +1,209 @@
 .login-pf body {
-    background: url("../img/keycloak-bg.png") no-repeat center center fixed;
+    background: #fff;
+}
+
+h1#kc-page-title{
+    font-size: 22px;
+    font-weight: 500;
+    color: #2c4c61;
+}
+
+#RegisterButton {
+    background-color: #5c97bc;
+    border-color: #5c97bc;
+    color: #fff;
+    background-image: none;
+    height:40px;
+}
+registerBtn, input#kc-login.btn.btn-primary.btn-block.btn-lg{
+    background-color: #5c97bc;
+    border-color: #5c97bc;
+    color: #fff;
+    background-image: none;
+    height:40px;
+}
+
+#kc-content {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topNavbar {
+    height:12rem;
+    display: flex;
+    padding:1rem 4.5%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    border-bottom:1px solid #dae1e7;
+}
+
+.logoWrapper {
+    width:33%;
+    margin-left:33%;
+    display:flex;
+    justify-content:center;
+}
+
+.Logo {
+    width: 130px;
+    height: 98px;
+    background-image: url(../img/keycloak-logo-text.png);
     background-size: cover;
+    background-position: center;  
+    box-sizing: border-box;
+    cursor:pointer;
+}
+
+.loginBar {
+    display:flex;
+    justify-content:flex-end;
+    width:33%;
+}
+
+.loginButton {
+    max-width: 130px;
+    height: 16px;
+    font-size: 1.4rem;
+    color: #5c97bc;
+    border-style: none;
+    padding-left:1.5rem;
+    text-transform:uppercase;
+    cursor: pointer;
+    background:#fff;
+}
+
+.light.loginButton {
+    color:#5c97bc;
+    padding-right:0;
+}
+
+.dark.loginButton {
+    color:#4a5d68;
+}
+
+
+.secondaryBar {
+    height:4rem;
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 2rem;
+    padding-left:5%;
+    padding-right:5%;
+    padding-top:2rem;
+}
+
+.secondaryH2 {
+    font-size: 2rem;
+    color: #101a21;
+    margin:0;
+}
+
+.secondaryH2 span {
+    font-weight: bold;
+}
+
+.linkBar {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    list-style:none;
+    padding-left:0;
+}
+
+.linkBar a {
+    color: #203340;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.6rem;
+}
+
+.linkBar a:hover {
+    text-decoration:none;
+}
+
+.linkBar a:last-child{
+    padding-right:0px;
+}
+
+.footerWrapper {
+    width: 100%;
+    height: 35rem;
+    background-color: #fff;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+}
+
+.footerBar {
+    width:60%;  
+    margin-left:auto;
+    margin-right:auto;
+    height: 2rem;
+    display: flex;
+    justify-content:center;
+    margin-bottom: 2rem;
+}
+
+.footerLink {
+    color: #2c4c61;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1.6rem;
+    max-width:220px;
+    box-sizing:border-box;
+}
+
+.footerLink:hover {
+    text-decoration:none;
+}
+.socialBar {
+    width:130px;
+    height:50px;
+    margin-right:auto;
+    margin-left:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:5rem;
+}
+
+.socialIconTw {
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+    background-image: url(../img/facebook-icon.svg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 2.0rem;
+}
+
+.socialIconFb {
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+    background-image: url(../img/twitter-icon.svg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 2.0rem;
+}
+
+.bottomFooter { 
+    padding: 3.9rem 17.5rem 3.9rem;
+    background-color: #5c98bd;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align: center;
+    height: 12.6rem;
+    width:100%;
+}
+
+.footerP {
+    color: #fff;
+    font-size:1.2rem;
+    margin: 0;
 }
 
 .alert-error {
@@ -69,7 +272,7 @@ a#kc-current-locale-link::after {
 }
 
 .login-pf a:hover {
-    color: #0099d3;
+    color: #5c97bc;
 }
 
 #kc-logo {
@@ -87,8 +290,8 @@ a#kc-current-locale-link::after {
 div.kc-logo-text {
     background-image: url(../img/keycloak-logo-text.png);
     background-repeat: no-repeat;
-    height: 63px;
-    width: 300px;
+    height: 100px;
+    width: 130px;
     margin: 0 auto;
 }
 
@@ -107,8 +310,9 @@ div.kc-logo-text span {
     text-transform: uppercase;
     letter-spacing: 3px;
     line-height: 1.2em;
-    padding: 62px 10px 20px;
+    padding: 10px 0px;
     white-space: normal;
+    border-bottom:1px solid #dae1e7;
 }
 
 #kc-content {
@@ -362,7 +566,7 @@ a.zocial  {
 }
 
 #kc-form-buttons {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .login-pf-page .login-pf-brand {

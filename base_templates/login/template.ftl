@@ -33,9 +33,27 @@
 
 <body class="${properties.kcBodyClass!}">
   <div class="${properties.kcLoginClass!}">
-    <div id="kc-header" class="${properties.kcHeaderClass!}">
-      <div id="kc-header-wrapper" class="${properties.kcHeaderWrapperClass!}">${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}</div>
+    
+    <nav class="topNavbar">
+        <div class="logoWrapper">
+            <div class="Logo"></div>
+        </div>
+        <div class="loginBar">
+            <button class="loginButton dark">Iniciar sesión</button>
+            <button class="loginButton light">Registrarse</button>
+        </div>
+    </nav>
+
+    <div class="secondaryBar">
+        <h2 class="secondaryH2">Portal de <span>Co-creación Legislativa</span></h2>
+        <div class="linkBar">
+            <a>Proyectos</a>
+            <a>Cómo participar</a>
+            <a>La propuesta</a>
+        </div>
     </div>
+    
+
     <div class="${properties.kcFormCardClass!} <#if displayWide>${properties.kcFormCardAccountClass!}</#if>">
       <header class="${properties.kcFormHeaderClass!}">
         <#if realm.internationalizationEnabled  && locale.supported?size gt 1>
@@ -80,6 +98,22 @@
       </div>
 
     </div>
+
+<footer class="footerWrapper">
+    <div class="footerBar">
+        <a class="footerLink">Proyectos</a>
+        <a class="footerLink">La Propuesta</a>
+        <a class="footerLink">Preguntas Frecuentes</a>
+        <a class="footerLink">Términos y condiciones</a>
+    </div>
+    
+    <div class="socialBar">
+        <a href="/"><div class="socialIconTw"></div></a>
+        <a href="/"><div class="socialIconFb"></div></a>
+
+    </div>
+
+    <div class="bottomFooter"><p class="footerP">Honorable Cámara de diputados de la Nación Argentina | Congreso de la Nación Argentina | Av. Rivadavia 1864 | Ciudad Autónoma de Bs. As. (C.P. C1033AAV) | (54-11) 4127-7100</p><p class="footerP">La información contenida en este sitio es de dominio público y puede ser utilizada libremente. Se solicita citar la fuente.</p></div></footer>
   </div>
 </body>
 </html>

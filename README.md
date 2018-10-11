@@ -37,6 +37,7 @@ Themes are built with [Apache FreeMarker](https://freemarker.apache.org/). This 
 DemocracyOS theme files are inside `democracyos/` directory while custom configurations reside in `customization` directory. All content is copied during docker build.
 
 ## Docker Environment Variables
+---
 As seen in _Start Keycloak_ section, some variables are needed to bootstrap Keycloak. As this is an extension of the official Docker image we recommend reading through the [Official Docker Image Documentation](https://hub.docker.com/r/jboss/keycloak/). Variables shown here are:
 
 * `KEYCLOAK_USER`: set keycloak admin user. There's no default value, if it is not set then direct access to container shell is needed to use [kcadm](https://www.keycloak.org/docs/4.4/server_admin/#the-admin-cli).

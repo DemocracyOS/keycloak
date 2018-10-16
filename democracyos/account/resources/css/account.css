@@ -15,7 +15,7 @@ h1#kc-page-title{
     background-image: none;
     height:40px;
 }
-registerBtn, input#kc-login.btn.btn-primary.btn-block.btn-lg{
+.registerBtn, input#kc-login.btn.btn-primary.btn-block.btn-lg{
     background-color: #5c97bc;
     border-color: #5c97bc;
     color: #fff;

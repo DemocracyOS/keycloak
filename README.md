@@ -9,13 +9,19 @@ $ sudo docker pull democracyos/keycloak:4.4.0
 ```
 
 ### Start keycloak
+*Nice to read multiline*
 ```bash
 $ sudo docker run -d --name keycloak \
                   -p 8080:8080 \
                   -e "KEYCLOAK_USER=democracyos" \
                   -e "KEYCLOAK_PASSWORD=democracyos" \
                   -e "KEYCLOAK_WELCOME_THEME=democracyos" \
-                  democracyos/keycloak
+                  democracyos/keycloak:4.4.0.Final
+```
+
+*Copy & Paste friendly one-liner*
+```bash
+$ sudo docker run -d --name keycloak -p 8080:8080 -e "KEYCLOAK_USER=democracyos" -e "KEYCLOAK_PASSWORD=democracyos" -e "KEYCLOAK_WELCOME_THEME=democracyos" democracyos/keycloak:4.4.0.Final
 ```
 
 ### Access Keycloak
@@ -32,6 +38,24 @@ Set DemocracyOS theme
 ## Customize DemocracyOS theme
 ---
 Themes are built with [Apache FreeMarker](https://freemarker.apache.org/). This keycloak docker installation is configured to instantly reflect changes in theme files for development purposes. More on this in the [Official Documentation](https://www.keycloak.org/docs/4.4/server_development/index.html#_themes).
+
+To live edit DemocracyOS, with this repository files please run:
+
+*Nice to read multiline*
+```bash
+$ sudo docker run -d --name keycloak \
+                  -p 8080:8080 \
+                  -e "KEYCLOAK_USER=democracyos" \
+                  -e "KEYCLOAK_PASSWORD=democracyos" \
+                  -e "KEYCLOAK_WELCOME_THEME=democracyos" \
+                  -v $(pwd)/democracyos:/opt/jboss/keycloak/democracyos:rw
+                  democracyos/keycloak:4.4.0.Final
+```
+
+*Copy & Paste friendly one-liner*
+```bash
+$ sudo docker run -d --name keycloak -p 8080:8080 -e "KEYCLOAK_USER=democracyos" -e "KEYCLOAK_PASSWORD=democracyos" -e "KEYCLOAK_WELCOME_THEME=democracyos" -v $(pwd)/democracyos:/opt/jboss/keycloak/democracyos:rw democracyos/keycloak:4.4.0.Final
+```
 
 ### Docker Image files
 DemocracyOS theme files are inside `democracyos/` directory while custom configurations reside in `customization` directory. All content is copied during docker build.

@@ -10119,8 +10119,8 @@ h6 .label {
 }
 @media (min-width: 768px) {
   .login-pf .container .details {
-    border-left: 1px solid #474747;
-    padding-left: 40px;
+   /* border-left: 1px solid #474747;
+    padding-left: 40px; */
   }
   .login-pf .container .details p:first-child {
     border-top: 0;

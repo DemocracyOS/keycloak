@@ -6,6 +6,7 @@ h1#kc-page-title{
     font-size: 22px;
     font-weight: 500;
     color: #2c4c61;
+    margin-top:6rem;
 }
 
 #RegisterButton {
@@ -15,7 +16,7 @@ h1#kc-page-title{
     background-image: none;
     height:40px;
 }
-registerBtn, input#kc-login.btn.btn-primary.btn-block.btn-lg{
+.registerBtn, input#kc-login.btn.btn-primary.btn-block.btn-lg{
     background-color: #5c97bc;
     border-color: #5c97bc;
     color: #fff;
@@ -204,6 +205,53 @@ registerBtn, input#kc-login.btn.btn-primary.btn-block.btn-lg{
     color: #fff;
     font-size:1.2rem;
     margin: 0;
+}
+
+
+.zocial:before {
+	content: "";
+	font: 120%/1.65 zocial;
+	font-style: normal;
+	font-weight: normal;
+	padding: 0 0.5em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: none;
+	float:none;
+	box-shadow:none;
+}
+
+
+#zocial-twitter{
+    background:#1da1f2;
+    color:#fff;
+    font-size:12px;
+    font-weight:100;
+    line-height: 35px;
+
+}
+#zocial-facebook{
+    background:#3b5998;
+    color:#fff;
+    font-weight:100;
+    font-size:12px;
+    line-height: 35px;
+
+}
+
+#login-with-social{
+  font-size:1.4rem;
+  margin-bottom:17px;
+  margin-top:40px;
+  color:#203340;
+}
+
+.login-pf-page .login-pf-settings{
+  justify-content: flex-start;
+}
+
+#RegisterButton {
+  margin-bottom:3rem !important;
 }
 
 .alert-error {
@@ -461,6 +509,14 @@ a.zocial  {
 .zocial.microsoft:before{ content: "\f15d"; }
 .zocial.stackoverflow:before{ color: inherit; }
 
+#kc-form-wrapper{
+    max-width:100%;
+}
+#kc-social-providers{
+    padding:0;
+    border:0;
+    max-width: 100%;
+}
 
 @media (min-width: 768px) {
     #kc-container-wrapper {
@@ -566,7 +622,7 @@ a.zocial  {
 }
 
 #kc-form-buttons {
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .login-pf-page .login-pf-brand {
@@ -628,7 +684,7 @@ a.zocial  {
 }
 
 .login-pf-page .login-pf-social-link {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 .login-pf-page .login-pf-social-link a {
   padding: 2px 0;

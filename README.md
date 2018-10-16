@@ -15,7 +15,8 @@ $ sudo docker run -d --name keycloak \
                   -e "KEYCLOAK_USER=democracyos" \
                   -e "KEYCLOAK_PASSWORD=democracyos" \
                   -e "KEYCLOAK_WELCOME_THEME=democracyos" \
-                  democracyos/keycloak
+                  -v "./democracyos:~/keycloak/themes/democracyos" \
+                  democracyos/keycloak:4.4.0
 ```
 
 ### Access Keycloak

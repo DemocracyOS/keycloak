@@ -16,7 +16,7 @@ a.zocial {
 	border-color: rgba(0,0,0,0.2);
 	border-bottom-color: #333;
 	border-bottom-color: rgba(0,0,0,0.4);
-	color: #fff;
+	color: #fff; 
 	-moz-box-shadow: inset 0 0.08em 0 rgba(255,255,255,0.4), inset 0 0 0.1em rgba(255,255,255,0.9);
 	-webkit-box-shadow: inset 0 0.08em 0 rgba(255,255,255,0.4), inset 0 0 0.1em rgba(255,255,255,0.9);
 	box-shadow: inset 0 0.08em 0 rgba(255,255,255,0.4), inset 0 0 0.1em rgba(255,255,255,0.9);
@@ -42,26 +42,29 @@ a.zocial {
 
 .zocial:before {
 	content: "";
-	border-right: 0.075em solid rgba(0,0,0,0.1);
-	float: left;
 	font: 120%/1.65 zocial;
 	font-style: normal;
 	font-weight: normal;
-	margin: 0 0.5em 0 0;
 	padding: 0 0.5em;
 	text-align: center;
 	text-decoration: none;
 	text-transform: none;
-	
-	-moz-box-shadow: 0.075em 0 0 rgba(255,255,255,0.25);
-	-webkit-box-shadow: 0.075em 0 0 rgba(255,255,255,0.25);
-	box-shadow: 0.075em 0 0 rgba(255,255,255,0.25);
-	
-	-moz-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
+	float:none !important;
+	box-shadow:none !important;
 }
+
+a#zocial-twitter.zocial.twitter:before{
+	float:none !important;
+	box-shadow:none !important;
+}
+
+#zocial-twitter{
+	background: #3b5998;
+}
+
+
+
+
 
 .zocial:active {
 	outline: none; /* outline is visible on :focus */

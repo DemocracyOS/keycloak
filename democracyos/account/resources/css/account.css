@@ -14,6 +14,7 @@ h1#kc-page-title{
     color: #fff;
     background-image: none;
     height:40px;
+    margin-bottom:3rem !important;
 }
 .registerBtn, input#kc-login.btn.btn-primary.btn-block.btn-lg{
     background-color: #5c97bc;
@@ -21,7 +22,9 @@ h1#kc-page-title{
     color: #fff;
     background-image: none;
     height:40px;
+    margin-bottom:3rem !important;
 }
+
 
 #kc-content {
     max-width: 300px;
@@ -614,15 +617,18 @@ a.zocial  {
   margin-right: 0;
 }
 
+.custom-form{
+  max-width:100%;
+}
+
 @media (min-width: 768px) {
   .login-pf-page .login-pf-social-section:first-of-type {
-    padding-right: 39px;
     border-right: 1px solid #d1d1d1;
     margin-right: -1px;
   }
-  .login-pf-page .login-pf-social-section:last-of-type {
+ /* .login-pf-page .login-pf-social-section:last-of-type {
     padding-left: 40px;
-  }
+  } */
   .login-pf-page .login-pf-social-section .login-pf-social-link:last-of-type {
     margin-bottom: 0;
   }

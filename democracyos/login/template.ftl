@@ -39,8 +39,8 @@
             <div class="Logo"></div>
         </div>
         <div class="loginBar">
-            <button class="loginButton dark">Iniciar sesión</button>
-            <button class="loginButton light">Registrarse</button>
+            <a class="loginButton dark" href="${url.loginUrl}">Iniciar sesión</a>
+            <a class="loginButton light href="${url.registrationUrl}"">Registrarse</a>
         </div>
     </nav>
 

@@ -36,21 +36,21 @@
     
     <nav class="topNavbar">
         <div class="logoWrapper">
-            <div class="Logo"></div>
+            <a href="https://colegis-test.now.sh"><div class="Logo"></div></a>
         </div>
         <div class="loginBar">
             <a class="loginButton dark" href="${url.loginUrl}">Iniciar sesión</a>
-            <a class="loginButton light href="${url.registrationUrl}"">Registrarse</a>
+            <a class="loginButton light" href="${url.registrationUrl}">Registrarse</a>
         </div>
     </nav>
 
     <div class="secondaryBar">
         <h2 class="secondaryH2">Portal de <span>Co-creación Legislativa</span></h2>
         <div class="linkBar">
-            <a>Proyectos</a>
-            <a>Cómo participar</a>
-            <a>La propuesta</a>
-        </div>
+           <a href='https://colegis-test.now.sh/#projects' class="footerLink">Proyectos</a>
+           <a href='https://colegis-test.now.sh/info?section=como-participar'class="footerLink">Cómo participar</a>
+           <a href='https://colegis-test.now.sh/info?section=sobre-la-plataforma'class="footerLink">La plataforma</a>
+     </div>
     </div>
     
 

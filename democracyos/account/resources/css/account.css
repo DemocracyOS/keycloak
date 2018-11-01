@@ -74,15 +74,20 @@ h1#kc-page-title{
     padding-left:1.5rem;
     cursor: pointer;
     background:#fff;
+    text-decoration:none;
 }
 
 .light.loginButton {
     color:#5c97bc;
     padding-right:0;
+    text-decoration:none !important;
+
 }
 
 .dark.loginButton {
     color:#4a5d68;
+    text-decoration:none !important;
+
 }
 
 

@@ -63,6 +63,7 @@ h1#kc-page-title{
     width:33%;
 }
 
+
 .loginButton {
     max-width: 130px;
     height: 16px;
@@ -70,18 +71,22 @@ h1#kc-page-title{
     color: #5c97bc;
     border-style: none;
     padding-left:1.5rem;
-    text-transform:uppercase;
     cursor: pointer;
     background:#fff;
+    text-decoration:none;
 }
 
 .light.loginButton {
     color:#5c97bc;
     padding-right:0;
+    text-decoration:none !important;
+
 }
 
 .dark.loginButton {
     color:#4a5d68;
+    text-decoration:none !important;
+
 }
 
 

@@ -36,7 +36,7 @@
     
     <nav class="topNavbar">
         <div class="logoWrapper">
-            <a href="https://colegis-test.now.sh"><div class="Logo"></div></a>
+            <a href="${client.baseUrl}/"><div class="Logo"></div></a>
         </div>
         <div class="loginBar">
             <a class="loginButton dark" href="${url.loginUrl}">Iniciar sesión</a>
@@ -47,9 +47,9 @@
     <div class="secondaryBar">
         <h2 class="secondaryH2">Portal de <span>Co-creación Legislativa</span></h2>
         <div class="linkBar">
-           <a href='https://colegis-test.now.sh/#projects' class="footerLink">Proyectos</a>
-           <a href='https://colegis-test.now.sh/info?section=como-participar'class="footerLink">Cómo participar</a>
-           <a href='https://colegis-test.now.sh/info?section=sobre-la-plataforma'class="footerLink">La plataforma</a>
+           <a href="${client.baseUrl}/#projects" class="footerLink">Proyectos</a>
+           <a href='${client.baseUrl}/info?section=como-participar'class="footerLink">Cómo participar</a>
+           <a href='${client.baseUrl}/info?section=sobre-la-plataforma'class="footerLink">La plataforma</a>
      </div>
     </div>
     
@@ -101,9 +101,9 @@
 
 <footer class="footerWrapper">
     <div class="footerBar">
-        <a href='https://colegis-test.now.sh/#projects' class="footerLink">Proyectos</a>
-        <a href='https://colegis-test.now.sh/info?section=como-participar'class="footerLink">Cómo participar</a>
-        <a href='https://colegis-test.now.sh/info?section=sobre-la-plataforma'class="footerLink">La plataforma</a>
+        <a href='${client.baseUrl}/#projects' class="footerLink">Proyectos</a>
+        <a href='${client.baseUrl}/info?section=como-participar'class="footerLink">Cómo participar</a>
+        <a href='${client.baseUrl}/info?section=sobre-la-plataforma'class="footerLink">La plataforma</a>
     </div>
     
     <div class="socialBar">

@@ -36,21 +36,21 @@
     
     <nav class="topNavbar">
         <div class="logoWrapper">
-            <div class="Logo"></div>
+            <a href="${client.baseUrl}/"><div class="Logo"></div></a>
         </div>
         <div class="loginBar">
-            <button class="loginButton dark">Iniciar sesión</button>
-            <button class="loginButton light">Registrarse</button>
+            <a class="loginButton dark" href="${url.loginUrl}">Iniciar sesión</a>
+            <a class="loginButton light" href="${url.registrationUrl}">Registrarse</a>
         </div>
     </nav>
 
     <div class="secondaryBar">
         <h2 class="secondaryH2">Portal de <span>Co-creación Legislativa</span></h2>
         <div class="linkBar">
-            <a>Proyectos</a>
-            <a>Cómo participar</a>
-            <a>La propuesta</a>
-        </div>
+           <a href="${client.baseUrl}/#projects" class="footerLink">Proyectos</a>
+           <a href='${client.baseUrl}/info?section=como-participar'class="footerLink">Cómo participar</a>
+           <a href='${client.baseUrl}/info?section=sobre-la-plataforma'class="footerLink">La plataforma</a>
+     </div>
     </div>
     
 
@@ -101,15 +101,14 @@
 
 <footer class="footerWrapper">
     <div class="footerBar">
-        <a class="footerLink">Proyectos</a>
-        <a class="footerLink">La Propuesta</a>
-        <a class="footerLink">Preguntas Frecuentes</a>
-        <a class="footerLink">Términos y condiciones</a>
+        <a href='${client.baseUrl}/#projects' class="footerLink">Proyectos</a>
+        <a href='${client.baseUrl}/info?section=como-participar'class="footerLink">Cómo participar</a>
+        <a href='${client.baseUrl}/info?section=sobre-la-plataforma'class="footerLink">La plataforma</a>
     </div>
     
     <div class="socialBar">
-        <a href="/"><div class="socialIconTw"></div></a>
-        <a href="/"><div class="socialIconFb"></div></a>
+        <a href=""><div class="socialIconTw"></div></a>
+        <a href=""><div class="socialIconFb"></div></a>
 
     </div>
 
